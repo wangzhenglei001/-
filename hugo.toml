@@ -3,7 +3,7 @@
 # =================================================
 
 # --- 核心设置 ---
-baseURL = "https://wangzhenglei001.github.io/myblog/"
+baseURL = "https://github.com/wangzhenglei001/-/"
 languageCode = "zh-cn"
 title = "我的个人博客"
 theme = "LoveIt"

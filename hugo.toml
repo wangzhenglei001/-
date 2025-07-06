@@ -1,0 +1,12 @@
+baseURL = "https://wangzhenglei001.github.io/myblog/" # ✅ 已修正为正确的 GitHub Pages 地址
+languageCode = "zh-cn"
+title = "我的个人博客"
+theme = "PaperMod"
+
+[params.profileMode]
+  enabled = false # ✅ 已修改，让主页直接显示文章列表
+  title = "我的博客"
+  subtitle = "在这里分享我的思考与发现"
+  imageUrl = ""
+  imageWidth = 120
+  imageHeight = 120

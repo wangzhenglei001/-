@@ -1,31 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>我的个人博客</title>
-    <link>http://localhost:1313/myblog/</link>
-    <description>Recent content on 我的个人博客</description>
-    <generator>Hugo -- 0.147.4</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Sat, 05 Jul 2025 13:58:20 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/myblog/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/myblog/posts/my-first-post/</link>
-      <pubDate>Sat, 05 Jul 2025 13:58:20 +0800</pubDate>
-      <guid>http://localhost:1313/myblog/posts/my-first-post/</guid>
-      <description>&lt;p&gt;jfklsa
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>我的个人博客</title>
+        <link>http://localhost:1313/myblog/</link>
+        <description>我的个人博客和学习笔记</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-cn</language><managingEditor>markwang0901@gmail.com (WangZhengLei)</managingEditor>
+            <webMaster>markwang0901@gmail.com (WangZhengLei)</webMaster><lastBuildDate>Sat, 05 Jul 2025 13:58:20 &#43;0800</lastBuildDate>
+            <atom:link href="http://localhost:1313/myblog/index.xml" rel="self" type="application/rss+xml" />
+        <item>
+    <title>My First Post</title>
+    <link>http://localhost:1313/myblog/my-first-post/</link>
+    <pubDate>Sat, 05 Jul 2025 13:58:20 &#43;0800</pubDate>
+    <author>WangZhengLei</author>
+    <guid>http://localhost:1313/myblog/my-first-post/</guid>
+    <description><![CDATA[<p>jfklsa
 fdsaf
 fklas
 dfska fdskjds
 fdksl ds
 fjkdlsa d
 fjdkls
-fkldsa&lt;/p&gt;
-&lt;p&gt;房东发&lt;/p&gt;
-&lt;p&gt;洞口的；房东狂&lt;/p&gt;
-&lt;p&gt;三方开始了 d 稳定隆安 fds 饭定时；安静&lt;/p&gt;
-&lt;p&gt;分开是&lt;/p&gt;
-&lt;p&gt;是顶上&lt;/p&gt;</description>
-    </item>
-  </channel>
+fkldsa</p>
+<p>房东发</p>
+<p>洞口的；房东狂</p>
+<p>三方开始了 d 稳定隆安 fds 饭定时；安静</p>
+<p>分开是</p>
+<p>是顶上</p>]]></description>
+</item>
+</channel>
 </rss>

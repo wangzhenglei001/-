@@ -1,12 +1,98 @@
-baseURL = "https://wangzhenglei001.github.io/myblog/" # ✅ 已修正为正确的 GitHub Pages 地址
+# =================================================
+#  一个干净、最小化的 hugo.toml 配置文件
+# =================================================
+
+# --- 核心设置 ---
+baseURL = "https://wangzhenglei001.github.io/myblog/"
 languageCode = "zh-cn"
 title = "我的个人博客"
-theme = "PaperMod"
+theme = "LoveIt"
+# 开启 Git 信息，用于显示文章更新时间等
+enableGitInfo = true
 
-[params.profileMode]
-  enabled = false # ✅ 已修改，让主页直接显示文章列表
-  title = "我的博客"
-  subtitle = "在这里分享我的思考与发现"
-  imageUrl = ""
-  imageWidth = 120
-  imageHeight = 120
+# --- 永久链接设置 (已修复警告) ---
+[permalinks]
+  posts = ":contentbasename"
+
+# --- 菜单设置 ---
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    name = "标签"
+    url = "/tags/"
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    name = "分类"
+    url = "/categories/"
+
+# --- 主题参数设置 (只保留核心部分) ---
+[params]
+  # 网站默认主题 ["auto", "light", "dark"]
+  defaultTheme = "auto"
+  # 日期格式
+  dateFormat = "2006-01-02"
+  # 网站描述
+  description = "我的个人博客和学习笔记"
+
+  # 作者配置
+  [params.author]
+    name = "WangZhengLei" # 替换成你的名字
+    email = "markwang0901@gmail.com"
+    link = ""
+
+  # 主页设置
+  [params.home.profile]
+    enable = true
+    avatarURL = "" # 在这里填入你的头像图片链接, 例如 "/images/avatar.png"
+    title = "欢迎来到我的博客"
+    subtitle = "在这里分享我的思考与发现"
+    typeit = true
+    social = true
+
+  # 主页的文章列表
+  [params.home.posts]
+    enable = true
+    paginate = 6
+
+  # 社交链接 (请取消注释并填入你自己的链接)
+  [params.social]
+    GitHub = "wangzhenglei001"
+    # X = "YourTwitterUsername"
+    # Email = "your-email@example.com"
+    RSS = true
+
+  # 搜索配置 (LoveIt 主题内置了 lunr.js 搜索)
+  [params.search]
+    enable = true
+    type = "lunr" # 使用本地搜索，无需 Algolia 配置
+
+  # 文章页面的代码块设置
+  [params.page.code]
+    copy = true # 显示复制按钮
+    maxShownLines = 20 # 默认显示20行
+
+  # 文章页面的评论设置 (以 giscus 为例，推荐)
+  [params.page.comment]
+    enable = false # 需要时再设为 true
+    [params.page.comment.giscus]
+      enable = true
+      # 前往 https://giscus.app/ 按指引配置，填入以下信息
+      repo = "wangzhenglei001/myblog" # 你的仓库 "用户名/仓库名"
+      repoId = "" # 在 giscus 网站上会提供
+      category = "Announcements" # 你的仓库需要开启 Discussions 功能
+      categoryId = "" # 在 giscus 网站上会提供
+
+# ==========================================================
+#  显式禁用与当前 Hugo 版本不兼容的主题功能
+# ==========================================================
+[params.page.code.render]
+  # 禁用 GOAT 和 Mermaid 图表渲染
+  goat = false
+  mermaid = false

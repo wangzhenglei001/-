@@ -11,8 +11,7 @@ theme = "LoveIt"
 enableGitInfo = true
 
 # --- 永久链接设置 (已修复警告) ---
-[permalinks]
-  posts = ":contentbasename"
+
 
 # --- 菜单设置 ---
 [menu]
